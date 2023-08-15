@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TriCalc</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="top-wrapper">
+            <h1 id="judul">TriCalc</h1>
+            <hr>
+            <h3>Merupakan sebuah kalkulator untuk menghitung luas dan keliling sebuah segitiga</h3>
+
+            <div class="btn-wrapper">
+                <button id="btn_choice" type="submit">Luas</button>
+                
+            </div>
+            <p>*Klik untuk mengubah</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="luasSegitiga" class="wrapper">
+            <div  class="explanation-section">
+                <h3>Luas Segitiga</h3>
+                <p>Segitiga adalah salah satu bentuk paling dasar dalam geometri.</p>
+                <img src="https://uploads-cdn.omnicalculator.com/images/geometry/area/triangle1-r2.svg?width=425&enlarge=0&format=webp" alt="">
+                <p>Kalkulator luas segitiga ini dapat membantu dalam menentukan luas segitiga. Rumus luas segitiga dasar harus memiliki alas dan tinggi yang diberikan.</p>
+                <p>luas segitiga = 0,5 * b * h, dengan b adalah panjang alas segitiga, dan h adalah tinggi segitiga.</p>
+            </div>
+
+            <form class="input_section" onsubmit="event.preventDefault();"> 
+                <p>Masukkan alas dan tinggi segitiga yang diketahui!</p>
+                <label for="tinggi-segitiga">Tinggi Segitiga (h)</label>
+                <input type="number" id="tinggiSegitiga" placeholder="0">
+        
+                <label for="alas-segitiga">Alas Segitiga (b)</label>
+                <input type="number" id="alasSegitiga" placeholder="0">
+        
+                <label for="hasil-segitiga">Hasil</label>
+                <input readonly type="number" id="luas" placeholder="0">
+                
+                <div class="btn-wrapper">
+                    <button type="submit" id="submit_1" >Hitung</button>
+                    <button type="reset" id="reset" >Reset</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="kelilingSegitiga" class="wrapper">
+            <div  class="explanation-section">
+                <h3>Keliling Segitiga</h3>
+                <p>Segitiga adalah salah satu bentuk paling dasar dalam geometri.</p>
+                <img src="https://uploads-cdn.omnicalculator.com/images/geometry/perimeter/triangle1-r2.svg" alt="">
+                <p>Dengan kalkulator keliling segitiga kami, Anda dapat dengan mudah menghitung keliling bangun tersebut. Alat ini menerapkan rumus dasar, rumus yang mengasumsikan Anda mengetahui ketiga sisi segitiga.</p>
+                <p>Rumus dasarnya tidak rumit, nilai keliling segitiga= a+b+c</p>
+            </div>
+            <form class="input_section" onsubmit="event.preventDefault();">
+                <p>Masukkan sisi segitiga yang diketahui!</p>
+                <label for="sisi_a_segitiga">Sisi A</label>
+                <input type="number" id="sisi_a" placeholder="0">
+        
+                <label for="sisi_b_segitiga">Sisi B</label>
+                <input type="number" id="sisi_b" placeholder="0">
+
+                <label for="sisi_c_segitiga">Sisi C</label>
+                <input type="number" id="sisi_c" placeholder="0">
+        
+                <label for="hasil-segitiga">Hasil Keliling</label>
+                <input readonly ="number" id="keliling" placeholder="0">
+                
+                <div class="btn-wrapper">
+                    <button type="submit" id="submit_2" >Hitung</button>
+                    <button type="reset" id="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+       
+
+    </main>
+
+    <footer>
+        <p>Sayful Haji Fahruri - 2023</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
